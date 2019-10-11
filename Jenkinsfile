@@ -12,18 +12,6 @@ pipeline{
             }
            
         }
-        stage('test'){
-            steps{
-                // sh 'newgrp docker'
-                sh 'whoami'
-                sh 'pwd'
-                sh 'docker images'
-                sh 'ls'
-                
-               
-            }
-            
-        }
         stage('mvn-build'){
             steps{
                 sh 'sudo mvn clean install -DskipTests'
