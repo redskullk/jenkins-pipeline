@@ -8,7 +8,7 @@ pipeline{
     stages{
         stage('checkout'){
             steps{
-                 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/kunalkumar229/hello-test.git']]])
+                 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/redskullk/jenkins-pipeline.git']]])
             }
            
         }
