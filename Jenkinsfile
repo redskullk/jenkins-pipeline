@@ -15,7 +15,7 @@ pipeline{
         stage('mvn-build'){
             steps{
                 sh 'sudo mvn clean install -DskipTests'
-                sh 'ls'
+                sh 'ls -R'
             }
         }
         
